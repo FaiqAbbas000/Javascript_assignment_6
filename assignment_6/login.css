@@ -1,0 +1,66 @@
+body{
+    background-image: url(backgroung.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.outerDiv{
+    margin-top: 10%; 
+    background-color: white;
+    width: 25%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title{
+    width: 100%;
+    /* text-align: center; */
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-top: 10%; */
+}
+
+input{
+    height: 40px;
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.innerDiv{
+    width: 90%
+}
+
+.title ,.field{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+label{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;
+    /* margin-left: 10px; */
+    font-style: bold;
+}
+
+span{
+    color: red;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    /* margin-left: 10px; */
+}
+.errorHandler{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}

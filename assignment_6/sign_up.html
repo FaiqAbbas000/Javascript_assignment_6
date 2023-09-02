@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="login.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="outerDiv">
+        <div class="innerDiv">
+            <div class="title">
+                <h1>Signup</h1>
+            </div>
+            <div class="form">
+                <form onsubmit="return addData()">
+                    <div class="field">
+                        <label>Name</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="name" id="name" placeholder="name">
+                    </div>
+                    <div class="errorHandler">
+                        <span id="nameError"></span>
+                    </div>
+                    <div class="field">
+                        <label>Username</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="username" id="username" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="errorHandler">
+                        <span id="usernameError"></span>
+                    </div>
+                    <div class="field">
+                        <label>Password</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" id="password" placeholder="abc@123">
+                    </div>
+                    <div class="errorHandler">
+                        <span id="passwordError"></span>
+                    </div>
+                    <div class="field">
+                        <label>Confirm Password</label>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="abc@123">
+                    </div>
+                    <div class="errorHandler">
+                        <span id="confirmationError"></span>
+                    </div>
+                    <!-- <div class="field">
+                        <input type="submit" value="Creat account" onclick="validation()">
+                    </div> -->
+
+                    <div class="field">
+                        <input type="submit" value="signup" onclick="return signupValidation()">
+                    </div>
+
+
+                    <div class="field">
+                        <a href="login.html">&#8592 back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>

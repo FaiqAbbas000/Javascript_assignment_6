@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="login.css">
+    <title>Login</title>
+
+</head>
+ 
+<body>
+    <div class="outerDiv">
+        <div class="innerDiv">
+            <div class="title">
+                <h1>Login</h1>
+            </div>
+            <div class="form">
+                <form class="loginForm" name="form" id="form" onsubmit="return findData()">
+                    <div class="field">
+                        <label>Username</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="username" placeholder="abc@gmail.com"><br>
+                    </div>
+                    <div class="errorHandler">
+                        <span id="usernameError"></span>
+                    </div>
+                    <div class="field">
+                        <label>Password</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="abc@123"><br>
+                    </div>
+                    <div class="errorHandler">
+                        <span id="passwordError"></span>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Log In" onclick="return loginValidation()">
+                    </div>
+                    <div class="field">
+                        <label>Don't have an account? <a href="sign_up.html">Create account</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>
